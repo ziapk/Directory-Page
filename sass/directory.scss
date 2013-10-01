@@ -1,13 +1,6 @@
-
-
-
-@import "bootstrap-responsive";
 @import "compass";
-
-
 $gridFluidColumnWidth: 6.38298%;
 $gridFluidGutterWidth: 2.12766%;
-
 @mixin makeFluidRow() {
   width: 100%;
   @include clearfix();
@@ -22,8 +15,6 @@ $gridFluidGutterWidth: 2.12766%;
         margin-left: 0;
   }
 }
-
-
 /** Global Fonts **/
 $Normal: 'ProximaNova-Regular';
 $Semibold: 'ProximaNova-Semibold';
@@ -32,8 +23,6 @@ $Italic: 'ProximaNova-RegularIt';
 
 $margin_padding: 15px;
 $icon_font_size: 20px;
-
-
 
 /**common styles***/
 	$maroon:#96171A;
@@ -139,6 +128,13 @@ $PageHeading4: 18px $Normal;
 	}
   }
 
+
+#ie7 input.span12{
+	width:95% !important;
+}
+#ie7 .ya-directory input.span12{
+	width:95% !important;
+}
 .ya-directory{
 	
 
@@ -197,8 +193,17 @@ $PageHeading4: 18px $Normal;
 		
 			.ya-left-section{
 				margin-left:0;
-				ol{list-style-type:upper-alpha; list-style-position: inside; margin:0;}
-				.ya-record-row{@extend .ya-grey-border-bottom; }
+				
+				.ya-record-row{@extend .ya-grey-border-bottom;
+					.ya-message-button-row,
+					.ya-two-column-row{
+						margin-left: 25px !important;
+					}
+				}
+				.ya-google-letter{
+					float:left;
+				}
+				
 				.ya-record-row:last-child{border:0 none; margin:0; padding:0;}
 				.ya-message-button-row{margin:0 !important;}
 				.ya-two-column-row{
@@ -235,7 +240,7 @@ $PageHeading4: 18px $Normal;
 				}
 				.ya-read-more-less{margin:2px 0;}
 				.ya-more-details-panel{
-					margin: 10px 0 0 0;
+					margin: 10px 0 0 25px;
 					.ya-label{ font-family: $Bold;@include makeFluidColumn(3);
 						@media(max-width:480px){@include makeFluidColumn(4);}
 					}
@@ -270,6 +275,7 @@ $PageHeading4: 18px $Normal;
         }
 		.ya-programs-panel{
 			@include makeFluidRow();
+			margin-left:25px;
 			.ya-title{@include makeFluidColumn(12); font-family: $Semibold;
 				
 			}
@@ -295,4 +301,16 @@ $PageHeading4: 18px $Normal;
 
 	
 		
+}
+.tab-content{
+	overflow:inherit;
+}
+a:link, a:active, a:visited,
+a:focus{
+	outline:none !important;
+	text-decoration: none !important;
+}
+.DnnModule{
+	margin-bottom:0 !important;
+	padding:0 0 20px !important;
 }

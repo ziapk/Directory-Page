@@ -43,10 +43,10 @@ function hideSearchButton(thisid) {
 }
 function showSearchButton(thisid) {
     if (jQuery(thisid).attr('id') == "hide-top-search-teacher") {
-        document.getElementById("hide-me-search-teacher").style.display = 'block';
+        document.getElementById("hide-me-search-teacher").style.display = 'inline-block';
     }
     if (jQuery(thisid).attr('id') == "hide-top-search-school") {
-        document.getElementById("hide-me-search-school").style.display = 'block';
+        document.getElementById("hide-me-search-school").style.display = 'inline-block';
     }
 
 }
