@@ -115,9 +115,6 @@ $PageHeading4: 18px $Normal;
   }
 
   .ya-main-content{
-	@media (max-width:480px){
-		padding:20px 15px;
-	}
 	@media (min-width: 768px) and (max-width: 979px){
 		padding:20px 15px;
 	}
@@ -194,14 +191,19 @@ $PageHeading4: 18px $Normal;
 			.ya-left-section{
 				margin-left:0;
 				
-				.ya-record-row{@extend .ya-grey-border-bottom;
+				.ya-record-row{
+					@extend .ya-grey-border-bottom;
+					position:relative;
 					.ya-message-button-row,
 					.ya-two-column-row{
 						margin-left: 25px !important;
+						width:auto;
 					}
 				}
 				.ya-google-letter{
 					float:left;
+					position:absolute;
+					left:0;top:0;
 				}
 				
 				.ya-record-row:last-child{border:0 none; margin:0; padding:0;}
@@ -314,3 +316,5 @@ a:focus{
 	margin-bottom:0 !important;
 	padding:0 0 20px !important;
 }
+
+

@@ -131,11 +131,6 @@ h4 {
   }
 }
 
-@media (max-width: 480px) {
-  .ya-main-content {
-    padding: 20px 15px;
-  }
-}
 @media (min-width: 768px) and (max-width: 979px) {
   .ya-main-content {
     padding: 20px 15px;
@@ -284,13 +279,20 @@ h4 {
 .ya-directory .ya-search-result-panel .ya-result-block .ya-left-section, .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section {
   margin-left: 0;
 }
+.ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-record-row, .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section .ya-record-row {
+  position: relative;
+}
 .ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-record-row .ya-message-button-row,
 .ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-record-row .ya-two-column-row, .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section .ya-record-row .ya-message-button-row,
 .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section .ya-record-row .ya-two-column-row {
   margin-left: 25px !important;
+  width: auto;
 }
 .ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-google-letter, .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section .ya-google-letter {
   float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-record-row:last-child, .ya-directory .ya-search-training-school-panel .ya-result-block .ya-left-section .ya-record-row:last-child {
   border: 0 none;
